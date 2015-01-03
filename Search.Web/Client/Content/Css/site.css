@@ -1,0 +1,21 @@
+﻿body {
+}
+
+#search-box {
+    width: 560px;
+    margin: 0px 0px 0px 12px;
+    border-width: 1px;
+    border-style: solid;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    padding: 0px 9px 0px 0px;
+    max-height: 28px;
+    outline: medium none;
+    border-color: #CCC;
+    box-sizing: content-box;
+    position: relative;
+    height: 28px;
+}

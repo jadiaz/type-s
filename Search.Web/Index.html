@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <title>Type-S: Search Application Technology Demonstrator</title>
+
+    <link href="client/content/css/site.css" rel="stylesheet"/>
+</head>
+<body>
+    <div data-ng-include="'client/search/search.html'"></div>
+
+    <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular-route.min.js"></script>
+    <script src="client/app.module.js"></script>
+
+    <script src="client/Core/core.module.js"></script>
+    <script src="client/Core/config.js"></script>
+    <script src="client/Core/searchservice.js"></script>
+
+    <script src="client/Search/search.module.js"></script>
+    <script src="client/Search/search.controller.js"></script>
+</body>
+</html>
