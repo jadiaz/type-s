@@ -2,28 +2,25 @@
     'use strict';
 
     angular
-        .module('app.search')
+        .module('search.demo.search')
         .controller('SearchController', SearchController);
+
+    SearchController.$inject = ['searchservice'];
 
     function SearchController(searchservice) {
         var vm = this;
         vm.results = [];
-        vm.title = config.appTitle;
+        vm.title = 'Type-S: Search Application Technology Demonstrator';
 
         activate();
 
         function activate() {
-            return getSearchResults().then(function () {
-                console.log("retrieve results from query (search.js)");
-            });
+            console.log("[SearchController] entered activate function.");
+            return vm.results = getSearchResults();
         }
 
         function getSearchResults() {
-            return searchservice.queryWeb().then(function (data) {
-                vm.results = data;
-                console.log("searchservice.js returned results");
-                return vm.results;
-            });
+            return searchservice.webSearch();
         }
     }
 })();

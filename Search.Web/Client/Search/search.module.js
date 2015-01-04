@@ -1,4 +1,4 @@
 ﻿(function () {
     'use strict';
-    angular.module('app.search', []);
+    angular.module('search.demo.search', []);
 })();

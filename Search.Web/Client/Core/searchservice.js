@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app.core')
+        .module('search.demo.core')
         .factory('searchservice', searchservice);
 
     function searchservice() {
@@ -27,17 +27,17 @@
         }
 
         function getSampleSearchResults() {
-            return results = [
+            return [
                 { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' },
-                { title: 'sample title 1', description: 'sample description', link: 'http://www.bing.com' }
+                { title: 'sample title 2', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 3', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 4', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 5', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 6', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 7', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 8', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 9', description: 'sample description', link: 'http://www.bing.com' },
+                { title: 'sample title 10', description: 'sample description', link: 'http://www.bing.com' }
             ];
         }
     }

@@ -1,7 +1,8 @@
 ﻿(function () {
     'use strict';
-    angular.module('app', [
-        'app.core',
-        'app.search'
+    angular.module('search.demo', [
+        'search.demo.core',
+        'ui.bootstrap',
+        'search.demo.search'
     ]);
 })();
