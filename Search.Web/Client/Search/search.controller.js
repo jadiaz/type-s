@@ -9,14 +9,19 @@
 
     function SearchController(searchservice) {
         var vm = this;
+        vm.search = search;
         vm.results = [];
         vm.title = 'Type-S: Search Application Technology Demonstrator';
 
         activate();
 
         function activate() {
-            console.log("[SearchController] entered activate function.");
-            return vm.results = getSearchResults();
+            console.log("[SearchController] controller has been activated.");
+        }
+
+        function search() {
+            console.log("[SearchController] search button pressed.")
+            return getSearchResults();
         }
 
         function getSearchResults() {
